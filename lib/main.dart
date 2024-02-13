@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/widgets/basic_screen.dart';
+import 'package:flutter_application_1/widgets/immutable_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +28,7 @@ class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key, required this.title});
   final String title;
   @override
-  Widget build(BuildContext content) {
-    return Scaffold();
+  Widget build(BuildContext context) {
+    return const BasicScreen();
   }
 }
