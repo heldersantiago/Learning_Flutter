@@ -8,13 +8,17 @@ class BasicScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.indigo,
-        title: const Text('Welcome to Flutter'),
+        backgroundColor: Colors.amber[700],
+        title: const Text('Learning Flutter'),
         actions: const <Widget>[
           Padding(
             padding: EdgeInsets.all(10.0),
-            child: Icon(Icons.edit),
-          )
+            child: Icon(Icons.message),
+          ),
+          Padding(
+            padding: EdgeInsets.all(10.0),
+            child: Icon(Icons.login),
+          ),
         ],
       ),
       body: const Center(
@@ -25,7 +29,7 @@ class BasicScreen extends StatelessWidget {
       ),
       drawer: Drawer(
         child: Container(
-            color: Colors.lightBlue,
+            color: Colors.amber[600],
             child: const Center(
               child: Text('AQUI'),
             )),
