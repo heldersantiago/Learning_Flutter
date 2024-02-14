@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/widgets/basic_screen.dart';
-import 'package:flutter_application_1/widgets/immutable_widget.dart';
+import 'package:flutter_application_1/widgets/profile_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,16 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Home Page'),
+      home: const ProfileScreen(),
     );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key, required this.title});
-  final String title;
-  @override
-  Widget build(BuildContext context) {
-    return const BasicScreen();
   }
 }
